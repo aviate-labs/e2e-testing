@@ -1,0 +1,11 @@
+type Example = 
+ service {
+   add: (int) -> (int);
+   addAdmin: (principal) -> () oneway;
+   counter: () -> (int) query;
+   div: (int) -> (int);
+   getAdmins: () -> (vec principal) query;
+   mul: (int) -> (int);
+   sub: (int) -> (int);
+ };
+service : () -> Example
